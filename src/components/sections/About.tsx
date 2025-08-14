@@ -1,6 +1,9 @@
+import { Badge } from "@/components/ui/badge"
+import AnimatedSection from "@/components/ui/AnimatedSection"
+
 const skills = [
   "User Interface Design",
-  "User Experience Design",
+  "User Experience Design", 
   "Prototyping",
   "Design Systems",
   "User Research",
@@ -10,7 +13,7 @@ const skills = [
 const tools = [
   "Figma",
   "Adobe Creative Suite",
-  "Principle",
+  "Principle", 
   "Framer",
   "Miro",
   "Notion"
@@ -22,7 +25,7 @@ const About = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            <div>
+            <AnimatedSection animation="fadeUp">
               <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
                 About Me
               </h2>
@@ -42,41 +45,43 @@ const About = () => {
                   make the world a little bit better.
                 </p>
               </div>
-            </div>
+            </AnimatedSection>
             
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-xl font-semibold text-foreground mb-4">
-                  Skills
-                </h3>
-                <div className="grid grid-cols-2 gap-2">
-                  {skills.map((skill) => (
-                    <div 
-                      key={skill}
-                      className="text-sm text-muted-foreground py-2 px-3 bg-background rounded-md border border-border"
-                    >
-                      {skill}
-                    </div>
-                  ))}
+            <AnimatedSection animation="slideLeft" delay={0.2}>
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground mb-4">
+                    Skills
+                  </h3>
+                  <div className="grid grid-cols-2 gap-2">
+                    {skills.map((skill) => (
+                      <div 
+                        key={skill}
+                        className="text-sm text-muted-foreground py-2 px-3 bg-background rounded-md border border-border"
+                      >
+                        {skill}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground mb-4">
+                    Tools
+                  </h3>
+                  <div className="grid grid-cols-3 gap-2">
+                    {tools.map((tool) => (
+                      <div 
+                        key={tool}
+                        className="text-sm text-muted-foreground py-2 px-3 bg-background rounded-md border border-border text-center"
+                      >
+                        {tool}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
-              
-              <div>
-                <h3 className="text-xl font-semibold text-foreground mb-4">
-                  Tools
-                </h3>
-                <div className="grid grid-cols-3 gap-2">
-                  {tools.map((tool) => (
-                    <div 
-                      key={tool}
-                      className="text-sm text-muted-foreground py-2 px-3 bg-background rounded-md border border-border text-center"
-                    >
-                      {tool}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+            </AnimatedSection>
           </div>
         </div>
       </div>

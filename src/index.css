@@ -109,6 +109,68 @@ Inspired by Scandinavian minimalism and clean design principles
   }
 }
 
+/* Custom Cursor Styles */
+.custom-cursor {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: hsl(var(--accent));
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  will-change: transform;
+}
+
+.custom-cursor-text {
+  position: fixed;
+  background: hsl(var(--accent));
+  color: hsl(var(--accent-foreground));
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  pointer-events: none;
+  z-index: 9998;
+  will-change: transform;
+}
+
+/* Hide default cursor on interactive elements when custom cursor is active */
+@media (hover: hover) and (pointer: fine) {
+  * {
+    cursor: none !important;
+  }
+}
+
+/* Performance optimizations */
+.animate-performance {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Smooth transitions */
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .custom-cursor,
+  .custom-cursor-text {
+    display: none !important;
+  }
+}
+
 @layer base {
   * {
     @apply border-border;

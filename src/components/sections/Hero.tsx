@@ -1,11 +1,13 @@
 import { Button } from "@/components/ui/button"
 import { ArrowDown } from "lucide-react"
+import AnimatedSection from "@/components/ui/AnimatedSection"
+import { motion } from "framer-motion"
 
 const Hero = () => {
   return (
     <section className="min-h-[90vh] flex items-center justify-center bg-hero-gradient">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
+        <AnimatedSection className="max-w-4xl mx-auto text-center" animation="fadeIn">
           <h1 className="text-4xl sm:text-5xl lg:text-hero font-bold text-foreground mb-6 leading-tight">
             Alex Chen
           </h1>
@@ -34,7 +36,7 @@ const Hero = () => {
               <ArrowDown size={20} className="group-hover:translate-y-1 transition-transform" />
             </a>
           </div>
-        </div>
+        </AnimatedSection>
       </div>
     </section>
   )

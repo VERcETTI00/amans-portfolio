@@ -1,8 +1,15 @@
 import { Button } from "@/components/ui/button"
+import { useScrollProgress } from "@/hooks/useScrollProgress"
 
 const Header = () => {
+  const { isScrolled } = useScrollProgress()
+
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out ${
+        isScrolled 
+          ? 'bg-background/90 backdrop-blur-lg border-b border-border/50 shadow-sm' 
+          : 'bg-transparent'
+      }`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
@@ -23,8 +30,8 @@ const Header = () => {
             </a>
           </nav>
           
-          <Button variant="accent" size="sm" className="hidden sm:flex">
-            Let's Work Together
+          <Button variant="outline" size="sm" asChild>
+            <a href="#contact">Get In Touch</a>
           </Button>
         </div>
       </div>

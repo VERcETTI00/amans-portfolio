@@ -1,6 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ExternalLink } from "lucide-react"
+import AnimatedSection from "@/components/ui/AnimatedSection"
+import { motion } from "framer-motion"
+import { staggerContainer, staggerItem } from "@/lib/animations"
 
 // Import project images
 import heroProject from "@/assets/hero-project.jpg"
@@ -66,21 +69,32 @@ const Work = () => {
     <section id="work" className="py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+          <AnimatedSection className="text-center mb-16" animation="fadeUp">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
               Selected Work
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               A curated collection of projects that showcase my approach to solving design challenges.
             </p>
-          </div>
+          </AnimatedSection>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project) => (
-              <Card 
-                key={project.id} 
-                className="group overflow-hidden border-0 shadow-card hover:shadow-card-hover transition-all duration-300 cursor-pointer"
+          <motion.div 
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+          >
+            {projects.map((project, index) => (
+                <motion.div
+                key={project.id}
+                variants={staggerItem}
+                transition={{ duration: 0.6, ease: "easeOut" }}
               >
+                <Card 
+                  className="group overflow-hidden border-0 shadow-card hover:shadow-card-hover transition-all duration-300 cursor-pointer"
+                  data-project
+                >
                 <div className="aspect-[4/3] overflow-hidden">
                   <img
                     src={project.image}
@@ -122,9 +136,10 @@ const Work = () => {
                     </a>
                   </Button>
                 </CardContent>
-              </Card>
+                </Card>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
