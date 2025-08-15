@@ -60,7 +60,7 @@ const AnimatedSection = ({
 
   return (
     <motion.div
-      ref={ref as any}
+      ref={ref}
       className={className}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
