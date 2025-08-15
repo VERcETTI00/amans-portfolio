@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 
 const Hero = () => {
   return (
-    <section className="min-h-[90vh] flex items-center justify-center bg-hero-gradient">
+    <section className="min-h-screen flex items-center justify-center bg-hero-gradient">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection className="max-w-4xl mx-auto text-center" animation="fadeIn">
           <h1 className="text-4xl sm:text-5xl lg:text-hero font-bold text-foreground mb-6 leading-tight">
