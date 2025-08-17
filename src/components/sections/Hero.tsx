@@ -2,15 +2,52 @@ import { Button } from "@/components/ui/button"
 import { ArrowDown } from "lucide-react"
 import AnimatedSection from "@/components/ui/AnimatedSection"
 import { motion } from "framer-motion"
+import { useMousePosition } from "@/hooks/useMousePosition"
+import { useRef } from "react"
 
 const Hero = () => {
+  const mousePosition = useMousePosition()
+  const nameRef = useRef<HTMLHeadingElement>(null)
+
+  const getRotation = () => {
+    if (!nameRef.current) return { rotateX: 0, rotateY: 0 }
+    
+    const rect = nameRef.current.getBoundingClientRect()
+    const centerX = rect.left + rect.width / 2
+    const centerY = rect.top + rect.height / 2
+    
+    const rotateX = ((mousePosition.y - centerY) / window.innerHeight) * -20
+    const rotateY = ((mousePosition.x - centerX) / window.innerWidth) * 20
+    
+    return { 
+      rotateX: Math.max(-15, Math.min(15, rotateX)), 
+      rotateY: Math.max(-15, Math.min(15, rotateY)) 
+    }
+  }
+
+  const { rotateX, rotateY } = getRotation()
+
   return (
     <section className="min-h-screen flex items-center justify-center bg-hero-gradient">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection className="max-w-4xl mx-auto text-center" animation="fadeIn">
-          <h1 className="text-4xl sm:text-5xl lg:text-hero font-bold text-foreground mb-6 leading-tight">
-            Alex Chen
-          </h1>
+          <div 
+            className="perspective-1000 mb-6"
+            style={{ perspective: '1000px' }}
+          >
+            <h1 
+              ref={nameRef}
+              className="text-4xl sm:text-5xl lg:text-hero font-bold text-foreground leading-tight transform-gpu transition-transform duration-100 ease-out hover:scale-105"
+              style={{
+                transform: `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
+                transformStyle: 'preserve-3d',
+                textShadow: `${rotateY * 0.5}px ${rotateX * 0.5}px 10px rgba(0, 0, 0, 0.3)`,
+                willChange: 'transform',
+              }}
+            >
+              Aman Yadav
+            </h1>
+          </div>
           <p className="text-xl sm:text-2xl text-muted-foreground mb-4 font-light">
             Product Designer
           </p>
