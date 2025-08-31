@@ -3,6 +3,7 @@ import { ArrowDown } from "lucide-react"
 import AnimatedSection from "@/components/ui/AnimatedSection"
 import { motion } from "framer-motion"
 import { useMousePosition } from "@/hooks/useMousePosition"
+import JellySphere from "@/components/ui/JellySphere"
 
 
 const Hero = () => {
@@ -24,8 +25,9 @@ const Hero = () => {
   const { translateX, translateY } = getTranslation()
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-hero-gradient">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="min-h-screen flex items-center justify-center bg-hero-gradient relative overflow-hidden">
+      <JellySphere />
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div 
           className="max-w-4xl mx-auto text-center transition-transform duration-200 ease-out" 
           style={{
