@@ -32,30 +32,88 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection className="max-w-4xl mx-auto text-center" animation="fadeIn">
           <div 
-            className="perspective-1000 mb-6"
+            className="perspective-1000 mb-6 relative"
             style={{ perspective: '1000px' }}
           >
-            <h1 
+            <div
               ref={nameRef}
-              className="text-4xl sm:text-5xl lg:text-hero font-bold text-foreground leading-tight transform-gpu transition-transform duration-100 ease-out hover:scale-105"
+              className="text-4xl sm:text-5xl lg:text-hero font-bold leading-tight transform-gpu transition-transform duration-100 ease-out hover:scale-105 relative"
               style={{
                 transform: `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
                 transformStyle: 'preserve-3d',
-                textShadow: `
-                  1px 1px 0px hsl(var(--muted-foreground)),
-                  2px 2px 0px hsl(var(--muted-foreground)),
-                  3px 3px 0px hsl(var(--muted-foreground)),
-                  4px 4px 0px hsl(var(--muted-foreground)),
-                  5px 5px 0px hsl(var(--muted-foreground)),
-                  6px 6px 10px rgba(0, 0, 0, 0.4),
-                  ${rotateY * 0.8}px ${rotateX * 0.8}px 15px rgba(0, 0, 0, 0.3)
-                `,
                 willChange: 'transform',
-                WebkitTextStroke: '1px hsl(var(--border))',
               }}
             >
-              Aman Yadav
-            </h1>
+              {/* Layer 1 - Front (brightest) */}
+              <span 
+                className="absolute inset-0 text-foreground"
+                style={{
+                  transform: 'translateZ(0px)',
+                  textShadow: '0 0 20px hsl(var(--primary) / 0.5)',
+                }}
+              >
+                Aman Yadav
+              </span>
+              
+              {/* Layer 2 - Slightly back */}
+              <span 
+                className="absolute inset-0"
+                style={{
+                  transform: 'translateZ(-2px)',
+                  color: 'hsl(var(--foreground) / 0.9)',
+                }}
+              >
+                Aman Yadav
+              </span>
+              
+              {/* Layer 3 - Further back */}
+              <span 
+                className="absolute inset-0"
+                style={{
+                  transform: 'translateZ(-4px)',
+                  color: 'hsl(var(--foreground) / 0.8)',
+                }}
+              >
+                Aman Yadav
+              </span>
+              
+              {/* Layer 4 - Even further back */}
+              <span 
+                className="absolute inset-0"
+                style={{
+                  transform: 'translateZ(-6px)',
+                  color: 'hsl(var(--foreground) / 0.7)',
+                }}
+              >
+                Aman Yadav
+              </span>
+              
+              {/* Layer 5 - Deep back */}
+              <span 
+                className="absolute inset-0"
+                style={{
+                  transform: 'translateZ(-8px)',
+                  color: 'hsl(var(--foreground) / 0.6)',
+                }}
+              >
+                Aman Yadav
+              </span>
+              
+              {/* Layer 6 - Deepest (darkest) */}
+              <span 
+                className="absolute inset-0"
+                style={{
+                  transform: 'translateZ(-10px)',
+                  color: 'hsl(var(--foreground) / 0.5)',
+                  textShadow: `${rotateY * 0.8}px ${rotateX * 0.8}px 15px rgba(0, 0, 0, 0.6)`,
+                }}
+              >
+                Aman Yadav
+              </span>
+              
+              {/* Invisible placeholder for layout */}
+              <span className="opacity-0">Aman Yadav</span>
+            </div>
           </div>
           <p className="text-xl sm:text-2xl text-muted-foreground mb-4 font-light">
             Product Designer
