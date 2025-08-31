@@ -77,18 +77,26 @@ function AnimatedSphere() {
   const meshRef = useRef<THREE.Mesh>(null!)
   const mousePosition = useMousePosition()
   
-  // Create shader material
+  // Debug: Log component mount
+  React.useEffect(() => {
+    console.log('JellySphere: AnimatedSphere mounted')
+    console.log('JellySphere: Mouse position:', mousePosition)
+  }, [])
+  
+  // Create shader material with debugging
   const shaderMaterial = useMemo(() => {
+    console.log('JellySphere: Creating shader material')
     return new THREE.ShaderMaterial({
       vertexShader,
       fragmentShader,
       uniforms: {
         uTime: { value: 0 },
         uMouse: { value: new THREE.Vector2(0, 0) },
-        uMouseInfluence: { value: 0.2 }
+        uMouseInfluence: { value: 0.3 }
       },
-      transparent: true,
-      side: THREE.DoubleSide,
+      transparent: false,
+      side: THREE.FrontSide,
+      wireframe: false,
     })
   }, [])
   
@@ -106,27 +114,38 @@ function AnimatedSphere() {
       shaderMaterial.uniforms.uMouse.value = normalizedMouse
       
       // Gentle rotation
-      meshRef.current.rotation.y += 0.005
-      meshRef.current.rotation.x = Math.sin(state.clock.getElapsedTime() * 0.3) * 0.1
+      meshRef.current.rotation.y += 0.002
+      meshRef.current.rotation.x = Math.sin(state.clock.getElapsedTime() * 0.2) * 0.05
     }
   })
   
   return (
-    <Sphere ref={meshRef} args={[1.5, 64, 64]} position={[1, 0, -1]}>
+    <Sphere ref={meshRef} args={[2.5, 32, 32]} position={[0, 0, 0]}>
       <primitive object={shaderMaterial} />
     </Sphere>
   )
 }
 
 const JellySphere = () => {
+  React.useEffect(() => {
+    console.log('JellySphere: Component mounted')
+  }, [])
+
   return (
-    <div className="fixed inset-0 -z-10 pointer-events-none">
+    <div className="fixed inset-0 -z-10 pointer-events-none overflow-hidden">
       <Canvas
-        camera={{ position: [0, 0, 6], fov: 45 }}
-        style={{ background: 'transparent' }}
+        camera={{ position: [0, 0, 5], fov: 60 }}
+        style={{ 
+          background: 'transparent',
+          width: '100%',
+          height: '100%'
+        }}
+        onCreated={() => console.log('JellySphere: Canvas created')}
+        onError={(error) => console.error('JellySphere: Canvas error:', error)}
       >
-        <ambientLight intensity={0.6} />
-        <directionalLight position={[5, 5, 5]} intensity={0.8} />
+        <ambientLight intensity={1.0} />
+        <directionalLight position={[5, 5, 5]} intensity={1.0} />
+        <pointLight position={[0, 0, 5]} intensity={0.5} />
         <AnimatedSphere />
       </Canvas>
     </div>
