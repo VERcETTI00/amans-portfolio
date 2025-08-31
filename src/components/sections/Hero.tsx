@@ -41,8 +41,17 @@ const Hero = () => {
               style={{
                 transform: `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
                 transformStyle: 'preserve-3d',
-                textShadow: `${rotateY * 0.5}px ${rotateX * 0.5}px 10px rgba(0, 0, 0, 0.3)`,
+                textShadow: `
+                  1px 1px 0px hsl(var(--muted-foreground)),
+                  2px 2px 0px hsl(var(--muted-foreground)),
+                  3px 3px 0px hsl(var(--muted-foreground)),
+                  4px 4px 0px hsl(var(--muted-foreground)),
+                  5px 5px 0px hsl(var(--muted-foreground)),
+                  6px 6px 10px rgba(0, 0, 0, 0.4),
+                  ${rotateY * 0.8}px ${rotateX * 0.8}px 15px rgba(0, 0, 0, 0.3)
+                `,
                 willChange: 'transform',
+                WebkitTextStroke: '1px hsl(var(--border))',
               }}
             >
               Aman Yadav
