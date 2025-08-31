@@ -44,68 +44,66 @@ const Hero = () => {
                 willChange: 'transform',
               }}
             >
-              {/* Layer 1 - Front (brightest) */}
+              {/* Layer 1 - Front (normal text color) */}
               <span 
                 className="absolute inset-0 text-foreground"
                 style={{
                   transform: 'translateZ(0px)',
-                  textShadow: '0 0 20px hsl(var(--primary) / 0.5)',
                 }}
               >
                 Aman Yadav
               </span>
               
-              {/* Layer 2 - Slightly back */}
+              {/* Layer 2 - Slightly back (light gray) */}
               <span 
                 className="absolute inset-0"
                 style={{
                   transform: 'translateZ(-2px)',
-                  color: 'hsl(var(--foreground) / 0.9)',
+                  color: '#f5f5f5',
                 }}
               >
                 Aman Yadav
               </span>
               
-              {/* Layer 3 - Further back */}
+              {/* Layer 3 - Further back (lighter) */}
               <span 
                 className="absolute inset-0"
                 style={{
                   transform: 'translateZ(-4px)',
-                  color: 'hsl(var(--foreground) / 0.8)',
+                  color: '#f8f8f8',
                 }}
               >
                 Aman Yadav
               </span>
               
-              {/* Layer 4 - Even further back */}
+              {/* Layer 4 - Even further back (very light) */}
               <span 
                 className="absolute inset-0"
                 style={{
                   transform: 'translateZ(-6px)',
-                  color: 'hsl(var(--foreground) / 0.7)',
+                  color: '#fbfbfb',
                 }}
               >
                 Aman Yadav
               </span>
               
-              {/* Layer 5 - Deep back */}
+              {/* Layer 5 - Deep back (almost white) */}
               <span 
                 className="absolute inset-0"
                 style={{
                   transform: 'translateZ(-8px)',
-                  color: 'hsl(var(--foreground) / 0.6)',
+                  color: '#fdfdfd',
                 }}
               >
                 Aman Yadav
               </span>
               
-              {/* Layer 6 - Deepest (darkest) */}
+              {/* Layer 6 - Deepest (white edges) */}
               <span 
                 className="absolute inset-0"
                 style={{
                   transform: 'translateZ(-10px)',
-                  color: 'hsl(var(--foreground) / 0.5)',
-                  textShadow: `${rotateY * 0.8}px ${rotateX * 0.8}px 15px rgba(0, 0, 0, 0.6)`,
+                  color: '#ffffff',
                 }}
               >
                 Aman Yadav
