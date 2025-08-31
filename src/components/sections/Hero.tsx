@@ -3,116 +3,39 @@ import { ArrowDown } from "lucide-react"
 import AnimatedSection from "@/components/ui/AnimatedSection"
 import { motion } from "framer-motion"
 import { useMousePosition } from "@/hooks/useMousePosition"
-import { useRef } from "react"
+
 
 const Hero = () => {
   const mousePosition = useMousePosition()
-  const nameRef = useRef<HTMLHeadingElement>(null)
 
-  const getRotation = () => {
-    if (!nameRef.current) return { rotateX: 0, rotateY: 0 }
+  const getTranslation = () => {
+    const centerX = window.innerWidth / 2
+    const centerY = window.innerHeight / 2
     
-    const rect = nameRef.current.getBoundingClientRect()
-    const centerX = rect.left + rect.width / 2
-    const centerY = rect.top + rect.height / 2
-    
-    const rotateX = ((mousePosition.y - centerY) / window.innerHeight) * -20
-    const rotateY = ((mousePosition.x - centerX) / window.innerWidth) * 20
+    const translateX = ((mousePosition.x - centerX) / window.innerWidth) * 20
+    const translateY = ((mousePosition.y - centerY) / window.innerHeight) * 20
     
     return { 
-      rotateX: Math.max(-15, Math.min(15, rotateX)), 
-      rotateY: Math.max(-15, Math.min(15, rotateY)) 
+      translateX: Math.max(-15, Math.min(15, translateX)), 
+      translateY: Math.max(-15, Math.min(15, translateY)) 
     }
   }
 
-  const { rotateX, rotateY } = getRotation()
+  const { translateX, translateY } = getTranslation()
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-hero-gradient">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <AnimatedSection className="max-w-4xl mx-auto text-center" animation="fadeIn">
-          <div 
-            className="perspective-1000 mb-6 relative"
-            style={{ perspective: '1000px' }}
-          >
-            <div
-              ref={nameRef}
-              className="text-4xl sm:text-5xl lg:text-hero font-bold leading-tight transform-gpu transition-transform duration-100 ease-out hover:scale-105 relative"
-              style={{
-                transform: `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
-                transformStyle: 'preserve-3d',
-                willChange: 'transform',
-              }}
-            >
-              {/* Layer 1 - Front (normal text color) */}
-              <span 
-                className="absolute inset-0 text-foreground"
-                style={{
-                  transform: 'translateZ(0px)',
-                }}
-              >
-                Aman Yadav
-              </span>
-              
-              {/* Layer 2 - Slightly back (light gray) */}
-              <span 
-                className="absolute inset-0"
-                style={{
-                  transform: 'translateZ(-2px)',
-                  color: '#f5f5f5',
-                }}
-              >
-                Aman Yadav
-              </span>
-              
-              {/* Layer 3 - Further back (lighter) */}
-              <span 
-                className="absolute inset-0"
-                style={{
-                  transform: 'translateZ(-4px)',
-                  color: '#f8f8f8',
-                }}
-              >
-                Aman Yadav
-              </span>
-              
-              {/* Layer 4 - Even further back (very light) */}
-              <span 
-                className="absolute inset-0"
-                style={{
-                  transform: 'translateZ(-6px)',
-                  color: '#fbfbfb',
-                }}
-              >
-                Aman Yadav
-              </span>
-              
-              {/* Layer 5 - Deep back (almost white) */}
-              <span 
-                className="absolute inset-0"
-                style={{
-                  transform: 'translateZ(-8px)',
-                  color: '#fdfdfd',
-                }}
-              >
-                Aman Yadav
-              </span>
-              
-              {/* Layer 6 - Deepest (white edges) */}
-              <span 
-                className="absolute inset-0"
-                style={{
-                  transform: 'translateZ(-10px)',
-                  color: '#ffffff',
-                }}
-              >
-                Aman Yadav
-              </span>
-              
-              {/* Invisible placeholder for layout */}
-              <span className="opacity-0">Aman Yadav</span>
-            </div>
-          </div>
+        <div 
+          className="max-w-4xl mx-auto text-center transition-transform duration-200 ease-out" 
+          style={{
+            transform: `translate(${translateX}px, ${translateY}px)`,
+          }}
+        >
+          <AnimatedSection animation="fadeIn">
+          <h1 className="text-4xl sm:text-5xl lg:text-hero font-bold leading-tight mb-6">
+            Aman Yadav
+          </h1>
           <p className="text-xl sm:text-2xl text-muted-foreground mb-4 font-light">
             Product Designer
           </p>
@@ -139,6 +62,7 @@ const Hero = () => {
             </a>
           </div>
         </AnimatedSection>
+        </div>
       </div>
     </section>
   )
