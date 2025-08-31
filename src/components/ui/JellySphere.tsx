@@ -61,8 +61,8 @@ const fragmentShader = `
     // Smooth the gradient
     gradient = smoothstep(0.2, 0.8, gradient);
     
-    // Create black to white gradient
-    vec3 color = mix(vec3(0.1, 0.1, 0.1), vec3(0.9, 0.9, 0.9), gradient);
+    // Create black to white gradient with more contrast
+    vec3 color = mix(vec3(0.05, 0.05, 0.05), vec3(0.95, 0.95, 0.95), gradient);
     
     // Add subtle rim lighting
     float rim = 1.0 - abs(dot(vNormal, vec3(0.0, 0.0, 1.0)));
@@ -112,7 +112,7 @@ function AnimatedSphere() {
   })
   
   return (
-    <Sphere ref={meshRef} args={[2, 64, 64]} position={[2, 0, -2]}>
+    <Sphere ref={meshRef} args={[1.5, 64, 64]} position={[1, 0, -1]}>
       <primitive object={shaderMaterial} />
     </Sphere>
   )
@@ -122,11 +122,11 @@ const JellySphere = () => {
   return (
     <div className="fixed inset-0 -z-10 pointer-events-none">
       <Canvas
-        camera={{ position: [0, 0, 5], fov: 45 }}
+        camera={{ position: [0, 0, 6], fov: 45 }}
         style={{ background: 'transparent' }}
       >
-        <ambientLight intensity={0.3} />
-        <directionalLight position={[5, 5, 5]} intensity={0.5} />
+        <ambientLight intensity={0.6} />
+        <directionalLight position={[5, 5, 5]} intensity={0.8} />
         <AnimatedSphere />
       </Canvas>
     </div>
