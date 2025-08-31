@@ -124,6 +124,9 @@ export default {
 				'fade-up': 'fade-up 0.6s ease-out',
 				'scale-in': 'scale-in 0.5s ease-out',
 				'slide-left': 'slide-left 0.6s ease-out',
+			},
+			perspective: {
+				'1000': '1000px',
 			}
 		}
 	},

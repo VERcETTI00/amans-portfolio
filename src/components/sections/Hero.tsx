@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { ArrowDown } from "lucide-react"
 import AnimatedSection from "@/components/ui/AnimatedSection"
+import AnimatedText3D from "@/components/ui/AnimatedText3D"
 import { motion } from "framer-motion"
 import { useMousePosition } from "@/hooks/useMousePosition"
 
@@ -30,16 +31,18 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <AnimatedSection animation="fadeIn">
-          {/* Main title with subtle movement */}
-          <motion.h1 
-            className="text-4xl sm:text-5xl lg:text-hero font-bold leading-tight mb-6"
+          {/* Main title with 3D animation and subtle movement */}
+          <motion.div
             style={{
               transform: `translate(${getRandomTranslation(8, 1).translateX}px, ${getRandomTranslation(8, 1).translateY}px)`,
             }}
             transition={{ duration: 0.3, ease: "easeOut" }}
           >
-            Aman Yadav
-          </motion.h1>
+            <AnimatedText3D 
+              text="Aman Yadav"
+              className="text-4xl sm:text-5xl lg:text-hero font-bold leading-tight mb-6 block"
+            />
+          </motion.div>
           
           {/* Subtitle with different movement speed */}
           <motion.p 
