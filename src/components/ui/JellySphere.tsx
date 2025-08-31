@@ -61,15 +61,15 @@ const fragmentShader = `
     // Smooth the gradient
     gradient = smoothstep(0.2, 0.8, gradient);
     
-    // Create black to white gradient with more contrast
-    vec3 color = mix(vec3(0.05, 0.05, 0.05), vec3(0.95, 0.95, 0.95), gradient);
+    // Create strong black to white gradient
+    vec3 color = mix(vec3(0.0, 0.0, 0.0), vec3(1.0, 1.0, 1.0), gradient);
     
     // Add subtle rim lighting
     float rim = 1.0 - abs(dot(vNormal, vec3(0.0, 0.0, 1.0)));
     rim = smoothstep(0.6, 1.0, rim);
-    color += rim * 0.2;
+    color += rim * 0.3;
     
-    gl_FragColor = vec4(color, 0.8);
+    gl_FragColor = vec4(color, 1.0);
   }
 `
 
