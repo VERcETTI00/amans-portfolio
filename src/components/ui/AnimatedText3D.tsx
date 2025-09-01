@@ -186,9 +186,8 @@ const AnimatedText3D: React.FC<AnimatedText3DProps> = ({ text, className = '', s
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="font-bold text-black relative z-20"
+        className="font-bold text-black relative z-20 -translate-y-4"
         style={{
-          filter: phase >= 3 ? 'drop-shadow(0 4px 8px rgba(0,0,0,0.3))' : 'none',
           opacity: 1
         }}
       >
