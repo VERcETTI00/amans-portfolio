@@ -4,9 +4,9 @@ import { motion } from 'framer-motion'
 const SimpleLoader = () => {
   return (
     <div className="fixed inset-0 z-50 bg-background flex items-center justify-center">
-      <div className="text-center">
+      <div className="flex flex-col items-center text-center">
         {/* Main loading dots */}
-        <div className="flex space-x-2 mb-6">
+        <div className="flex items-center justify-center space-x-2 mb-6">
           {[0, 1, 2].map((i) => (
             <motion.div
               key={i}
@@ -27,7 +27,7 @@ const SimpleLoader = () => {
         
         {/* Loading text */}
         <motion.p 
-          className="text-foreground font-mono text-sm tracking-wider"
+          className="text-foreground font-mono text-sm tracking-wider text-center mb-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
@@ -36,7 +36,7 @@ const SimpleLoader = () => {
         </motion.p>
         
         {/* Progress line */}
-        <div className="w-32 h-px bg-muted-foreground/20 mt-4 mx-auto overflow-hidden">
+        <div className="w-32 h-px bg-muted-foreground/20 overflow-hidden">
           <motion.div 
             className="h-full bg-foreground"
             initial={{ width: "0%" }}
