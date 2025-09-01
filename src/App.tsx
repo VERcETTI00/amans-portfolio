@@ -7,7 +7,7 @@ import Index from "./pages/Index";
 import ProjectDetail from "./pages/ProjectDetail";
 import NotFound from "./pages/NotFound";
 import CustomCursor from "@/components/ui/CustomCursor";
-import Loader3D from "@/components/ui/Loader3D";
+import SimpleLoader from "@/components/ui/SimpleLoader";
 import { usePageLoading } from "@/hooks/usePageLoading";
 
 const queryClient = new QueryClient();
@@ -16,7 +16,7 @@ const App = () => {
   const isLoading = usePageLoading(2500);
 
   if (isLoading) {
-    return <Loader3D />;
+    return <SimpleLoader />;
   }
 
   return (
