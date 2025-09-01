@@ -129,8 +129,8 @@ const AnimatedText3D: React.FC<AnimatedText3DProps> = ({ text, className = '', s
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.15,
-        delayChildren: 1.0
+        staggerChildren: 0.05,
+        delayChildren: 0.2
       }
     }
   }
@@ -138,15 +138,15 @@ const AnimatedText3D: React.FC<AnimatedText3DProps> = ({ text, className = '', s
   const characterVariants = {
     hidden: {
       opacity: 0,
-      y: 20,
-      scale: 0.8
+      y: 10,
+      scale: 0.9
     },
     visible: {
       opacity: 1,
       y: 0,
       scale: 1,
       transition: {
-        duration: 0.6,
+        duration: 0.4,
         ease: [0.25, 0.46, 0.45, 0.94] as const,
         type: "spring" as const,
         stiffness: 120,
@@ -154,10 +154,10 @@ const AnimatedText3D: React.FC<AnimatedText3DProps> = ({ text, className = '', s
       }
     },
     extruded: {
-      y: -8,
-      scale: 1.05,
+      y: -4,
+      scale: 1.02,
       transition: {
-        duration: 0.8,
+        duration: 0.5,
         ease: "easeOut" as const
       }
     }
@@ -165,10 +165,10 @@ const AnimatedText3D: React.FC<AnimatedText3DProps> = ({ text, className = '', s
 
   useEffect(() => {
     const timers = [
-      setTimeout(() => setPhase(1), 500),   // Grid appears
-      setTimeout(() => setPhase(2), 1000),  // Text starts appearing
-      setTimeout(() => setPhase(3), 2000),  // Extrusion begins
-      setTimeout(() => setPhase(4), 3000),  // Final state
+      setTimeout(() => setPhase(1), 200),   // Grid appears
+      setTimeout(() => setPhase(2), 300),   // Text starts appearing immediately
+      setTimeout(() => setPhase(3), 1000),  // Extrusion begins
+      setTimeout(() => setPhase(4), 1500),  // Final state
     ]
 
     return () => timers.forEach(clearTimeout)
@@ -185,10 +185,11 @@ const AnimatedText3D: React.FC<AnimatedText3DProps> = ({ text, className = '', s
       <motion.h1
         variants={containerVariants}
         initial="hidden"
-        animate={phase >= 2 ? (phase >= 3 ? "extruded" : "visible") : "hidden"}
-        className="font-bold text-foreground relative z-10"
+        animate="visible"
+        className="font-bold text-black relative z-20"
         style={{
-          filter: phase >= 3 ? 'drop-shadow(0 4px 8px rgba(0,0,0,0.3))' : 'none'
+          filter: phase >= 3 ? 'drop-shadow(0 4px 8px rgba(0,0,0,0.3))' : 'none',
+          opacity: 1
         }}
       >
         {text.split('').map((char, index) => (
