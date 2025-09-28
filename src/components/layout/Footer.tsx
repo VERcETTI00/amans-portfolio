@@ -6,13 +6,13 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <p className="text-muted-foreground text-sm">
-                © 2024 Alex Chen. All rights reserved.
+                © 2025 Aman Yadav. All rights reserved.
               </p>
             </div>
             
             <div className="flex items-center space-x-6">
               <a 
-                href="https://linkedin.com/in/alexchen" 
+                href="https://www.linkedin.com/in/amanwhodesigns/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-accent transition-colors text-sm"
@@ -20,23 +20,31 @@ const Footer = () => {
                 LinkedIn
               </a>
               <a 
-                href="https://dribbble.com/alexchen" 
+                href="https://vercetti_00.artstation.com/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-accent transition-colors text-sm"
               >
-                Dribbble
+                Art Station
               </a>
               <a 
-                href="https://twitter.com/alexchen" 
+                href="https://www.behance.net/amanyadav82" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-accent transition-colors text-sm"
               >
-                Twitter
+                Behance
               </a>
               <a 
-                href="mailto:hello@alexchen.design"
+                href="https://www.figma.com/@amanwhodesigns" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-accent transition-colors text-sm"
+              >
+                Figma
+              </a>
+              <a 
+                href="mailto:amanwhodesigns@gmail.com"
                 className="text-muted-foreground hover:text-accent transition-colors text-sm"
               >
                 Email

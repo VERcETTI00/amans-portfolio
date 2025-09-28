@@ -2,21 +2,28 @@ import { Badge } from "@/components/ui/badge"
 import AnimatedSection from "@/components/ui/AnimatedSection"
 
 const skills = [
+  "3D Modelling",
+  "3D Texturing",
+  "3D Lighting",
+  "Animation",
+  "Management",
   "User Interface Design",
   "User Experience Design", 
   "Prototyping",
   "Design Systems",
-  "User Research",
-  "Visual Design"
+  "Problem Solving"
 ]
 
 const tools = [
+  "Autodesk Maya",
+  "Substance 3D Painter",
+  "Blender",
+  "Unreal Engine",
+  "Adobe After Effects",
+  "Adobe Illustrator",
+  "Adobe Photoshop",
   "Figma",
-  "Adobe Creative Suite",
-  "Principle", 
-  "Framer",
-  "Miro",
-  "Notion"
+  "Adobe Creative Suite"
 ]
 
 const About = () => {
@@ -31,18 +38,13 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  I'm a product designer with 5+ years of experience creating meaningful digital experiences. 
-                  My approach combines user-centered design thinking with a deep understanding of business goals.
+                  A storyteller at heart, driven by the belief that whether through film, 3D environments, or user interfaces, design holds the power to move people.
                 </p>
                 <p>
-                  I believe great design should be invisible—it should solve problems so elegantly that users 
-                  don't even think about the interface. This philosophy guides every project I work on, from 
-                  initial research to final implementation.
+                  Currently pursuing a Master’s in Animation & Multimedia, the work explores the intersection of art and technology. Projects span across 3D modeling, environment design, texturing, and lighting, as well as brand campaigns, UI/UX concepts, and research into how gamification and sustainable design can shape the future of user engagement. A published book chapter on Augmented Reality and Modern Multimedia Design further reflects a deep curiosity about how immersive technologies transform creative expression.
                 </p>
                 <p>
-                  When I'm not designing, you'll find me exploring local coffee shops, reading about emerging 
-                  technologies, or experimenting with photography. I'm always curious about how design can 
-                  make the world a little bit better.
+                  Prior to academic research and creative exploration, professional experience as a UI/UX Designer and Product Manager involved building digital products that balanced user needs with business goals. This hands-on background established a strong foundation in design thinking, product strategy, and storytellings showing how these elements converge to create practical and impactful solutions.
                 </p>
               </div>
             </AnimatedSection>
@@ -69,11 +71,11 @@ const About = () => {
                   <h3 className="text-xl font-semibold text-foreground mb-4">
                     Tools
                   </h3>
-                  <div className="grid grid-cols-3 gap-2">
+                  <div className="grid grid-cols-2 gap-2">
                     {tools.map((tool) => (
                       <div 
                         key={tool}
-                        className="text-sm text-muted-foreground py-2 px-3 bg-background rounded-md border border-border text-center"
+                        className="text-sm text-muted-foreground py-2 px-3 bg-background rounded-md border border-border"
                       >
                         {tool}
                       </div>

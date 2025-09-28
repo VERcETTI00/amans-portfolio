@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react"
+import { Mail, Phone, MapPin, Linkedin, Twitter, Figma, FigmaIcon, LucideFigma } from "lucide-react"
 import AnimatedSection from "@/components/ui/AnimatedSection"
 
 const Contact = () => {
@@ -105,10 +105,10 @@ const Contact = () => {
                     <div>
                       <p className="font-medium text-foreground">Email</p>
                       <a 
-                        href="mailto:hello@alexchen.design"
+                        href="mailto:amanwhodesigns@gmail.com"
                         className="text-muted-foreground hover:text-accent transition-colors"
                       >
-                        hello@alexchen.design
+                        amanwhodesigns@gmail.com
                       </a>
                     </div>
                   </div>
@@ -123,7 +123,7 @@ const Contact = () => {
                         href="tel:+1234567890"
                         className="text-muted-foreground hover:text-accent transition-colors"
                       >
-                        +1 (234) 567-890
+                        +91 9908632794
                       </a>
                     </div>
                   </div>
@@ -135,7 +135,7 @@ const Contact = () => {
                     <div>
                       <p className="font-medium text-foreground">Location</p>
                       <p className="text-muted-foreground">
-                        San Francisco, CA
+                        Dehradun, UK, India
                       </p>
                     </div>
                   </div>
@@ -147,20 +147,25 @@ const Contact = () => {
                   </h4>
                   <div className="flex gap-4">
                     <Button variant="minimal" size="sm" asChild>
-                      <a href="https://linkedin.com/in/alexchen" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                      <a href="https://www.linkedin.com/in/amanwhodesigns/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                         <Linkedin size={16} />
                         LinkedIn
                       </a>
                     </Button>
                     <Button variant="minimal" size="sm" asChild>
-                      <a href="https://dribbble.com/alexchen" target="_blank" rel="noopener noreferrer">
-                        Dribbble
+                      <a href="https://vercetti_00.artstation.com/" target="_blank" rel="noopener noreferrer">
+                        Art Station
                       </a>
                     </Button>
                     <Button variant="minimal" size="sm" asChild>
-                      <a href="https://twitter.com/alexchen" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                        <Twitter size={16} />
-                        Twitter
+                      <a href="https://www.figma.com/@amanwhodesigns" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                        <Figma size={16} />
+                        Figma
+                      </a>
+                    </Button>
+                    <Button variant="minimal" size="sm" asChild>
+                      <a href="https://www.behance.net/amanyadav82" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                        Behance
                       </a>
                     </Button>
                   </div>

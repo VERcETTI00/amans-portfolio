@@ -52,7 +52,7 @@ const Hero = () => {
             }}
             transition={{ duration: 0.4, ease: "easeOut" }}
           >
-            Product Designer
+            Designer & Storyteller
           </motion.p>
           
           {/* Description with another speed */}
@@ -63,7 +63,7 @@ const Hero = () => {
             }}
             transition={{ duration: 0.35, ease: "easeOut" }}
           >
-            I craft thoughtful digital experiences that solve real problems for real people.
+            Crafting experiences that blend creativity and real-world impact.
           </motion.p>
           
           {/* Buttons with different movement */}
