@@ -30,7 +30,7 @@ import interior from "@/assets/InteriorLighting.jpg";
 import oldaxe from "@/assets/OldAxe.jpg";
 import dogrig from "@/assets/DogRig.jpg";
 import humanrig from "@/assets/HumanRig.jpg";
-import uikit from "@/assets/uikit.png";
+import uikit from "@/assets/UiKit.png";
 import realestate from "@/assets/RealEstate.png";
 
 import icetda from "@/assets/icetda.jpg";
