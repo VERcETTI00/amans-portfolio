@@ -19,11 +19,14 @@ const tools = [
   "Substance 3D Painter",
   "Blender",
   "Unreal Engine",
+  "D5 Render",
+  "KeyShot Studio",
+  "Zbrush",
   "Adobe After Effects",
   "Adobe Illustrator",
   "Adobe Photoshop",
   "Figma",
-  "Adobe Creative Suite"
+  "Adobe Creative Suite"  
 ]
 
 const About = () => {
