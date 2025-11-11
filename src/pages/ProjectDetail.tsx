@@ -41,6 +41,8 @@ import icetda4 from "@/assets/icetda4.jpg";
 import bookchap from "@/assets/bookchap.jpg";
 import bookchap2 from "@/assets/bookchap2.jpg";
 
+import loginsignup from "@/assets/LoginSignup.jpg";
+
 const projects = {
   1: {
     title: "Rural Still Life – A Photorealistic Study in Light & Texture",
@@ -243,6 +245,24 @@ const projects = {
     abstract: ""
   },
   11: {
+    title: "Login/SignUp Page UI Concept",
+    category: "UI/UX",
+    client: "Self Project",
+    duration: "1 Week",
+    year: "2022",
+    description: "Login/Sign-Up Page UI Concept is a clean and minimal interface focused on simplicity, accessibility, and smooth user interaction. The design enhances usability while maintaining an elegant visual appeal through balanced spacing and subtle gradients.",
+    images: [loginsignup],
+    tags: ["UI/UX", "Adobe XD", "Mobile", "App Design"],
+    challenge: "Create an engaging authentication experience that feels modern yet lightweight, ensuring easy readability, clear hierarchy, and minimal friction for users logging in or signing up. Design a visual identity that communicates trust, simplicity, and modernity without unnecessary visual clutter.",
+    solution: "Implemented a soft blue-purple gradient accent over a clean white background to convey calmness and professionalism. Used consistent typography, intuitive field alignment, and responsive button design for seamless form interaction. Added micro-interactions and focus states to guide the user effortlessly through the process.",
+    results: [
+      "Delivered a high-fidelity concept showcasing a refined, user-centric authentication flow. Demonstrated strong understanding of visual hierarchy, color psychology, and form design. Created a scalable and adaptable login system suitable for web and mobile platforms.",
+    ],
+    technologies: ["Adobe XD"],
+    link: "https://www.behance.net/gallery/131240787/LoginSignUp-Page-UI-Concept",
+    abstract: ""
+  },
+  12: {
     title: "Sustainability, Gamification and User Retention: A Study on Eco-Conscious Gamification for Better User Engagement",
     category: "Research",
     client: "ICETDA 2025",
@@ -262,7 +282,7 @@ const projects = {
     link: "",
     abstract: "With increased usage of online platforms, the energy consumption of websites and applications has become a matter of sustainability. Traditional UI/UX elements such as high-resolution images, complex animations, and bold colors always stimulate interest but consume more power. This study proposes the development of a Sustainable UI Kit: reusable, energy-saving design assets that deliver user interaction without compromising on performance and compatibility. The package features green design elements like dark mode, image optimization, and minimized animation, and integrates gamified features—like progress bars and rewards—to maximize user retention. This study is design-focused, determining the most important elements required for a universally adaptable sustainable interface. The study is targeted at stakeholders involved in UI/UX design and digital sustainability. By evaluating the kit’s impact on energy consumption and interaction behavior through prototyping, this study contributes a practical framework for building visually appealing and ecologically conscious digital interfaces. "
   },
-  12: {
+  13: {
     title: "Augmented Reality and Modern Multimedia Design",
     category: "Research",
     client: "Contemporary Approaches in Art and Design (Graphic Era Hill University)",

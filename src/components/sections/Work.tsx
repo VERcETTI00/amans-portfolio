@@ -19,6 +19,7 @@ import uikit from "@/assets/UiKit.png";
 import realestate from "@/assets/RealEstate.png";
 import icetda from "@/assets/icetda.jpg";
 import bookchap from "@/assets/bookchap.jpg";
+import loginsignup from "@/assets/LoginSignup.jpg";
 
 interface Project {
   id: number;
@@ -133,10 +134,20 @@ const projects: Project[] = [
     tags: ["UI/UX", "Mobile", "App Design"],
     type: "UI/UX",
   },
+  {
+    id: 11,
+    title: "Login/SignUp Page UI Concept",
+    category: "UI/UX",
+    description:
+      "Clean and modern login/signup UI concept featuring a soft gradient accent, minimal layout, and smooth user-focused design aesthetics.",
+    image: loginsignup,
+    tags: ["UI/UX", "Mobile", "App Design"],
+    type: "UI/UX",
+  },
 
   // Research Projects (placeholders)
   {
-    id: 11,
+    id: 12,
     title: "Sustainability, Gamification and User Retention: A Study on Eco-Conscious Gamification for Better User Engagement",
     category: "Research",
     description:
@@ -146,7 +157,7 @@ const projects: Project[] = [
     type: "Research",
   },
   {
-    id: 12,
+    id: 13,
     title: "Augmented Reality and Modern Multimedia Design",
     category: "Research",
     description:
