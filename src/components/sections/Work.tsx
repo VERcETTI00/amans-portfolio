@@ -20,6 +20,8 @@ import realestate from "@/assets/RealEstate.png";
 import icetda from "@/assets/icetda.jpg";
 import bookchap from "@/assets/bookchap.jpg";
 import loginsignup from "@/assets/LoginSignup.jpg";
+import castleenvironment from "@/assets/CastleEnvironment.png"
+import isometricbedroom from "@/assets/isometricbedroom.jpg"
 
 interface Project {
   id: number;
@@ -165,6 +167,28 @@ const projects: Project[] = [
     image: bookchap,
     tags: ["AR", "Research", "Multimedia"],
     type: "Research",
+  },
+
+
+  {
+    id: 14,
+    title: "Medieval Castle Environment Design",
+    category: "3D Environment Design",
+    description:
+      "A castle environment created in Unreal Engine. This project showcases modular environment building, lighting, composition, and atmospheric design to bring a cinematic medieval world to life.",
+    image: castleenvironment,
+    tags: ["Unreal Engine", "3D Environment Art", "World Building"],
+    type: "3D",
+  },
+  {
+    id: 15,
+    title: "Stylized Low-Poly Isometric Bedroom",
+    category: "3D Modelling",
+    description:
+      "A stylized low-poly isometric bedroom designed with simple shapes, soft lighting, and playful colors. This project focuses on creating a cozy miniature scene with clear silhouettes, clean modeling, and an appealing, game-ready art style.",
+    image: isometricbedroom,
+    tags: ["Blender", "Stylized Art", "3D Modeling"],
+    type: "3D",
   },
 ];
 
