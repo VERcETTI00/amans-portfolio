@@ -67,6 +67,26 @@ const projects: Project[] = [
   },
   {
     id: 4,
+    title: "Medieval Castle Environment Design",
+    category: "3D Environment Design",
+    description:
+      "A castle environment created in Unreal Engine. This project showcases modular environment building, lighting, composition, and atmospheric design to bring a cinematic medieval world to life.",
+    image: castleenvironment,
+    tags: ["Unreal Engine", "3D Environment Art", "World Building"],
+    type: "3D",
+  },
+  {
+    id: 5,
+    title: "Stylized Low-Poly Isometric Bedroom",
+    category: "3D Modelling",
+    description:
+      "A stylized low-poly isometric bedroom designed with simple shapes, soft lighting, and playful colors. This project focuses on creating a cozy miniature scene with clear silhouettes, clean modeling, and an appealing, game-ready art style.",
+    image: isometricbedroom,
+    tags: ["Blender", "Stylized Art", "3D Modeling"],
+    type: "3D",
+  },
+  {
+    id: 6,
     title: "Interior Living Space Modeling & Lighting",
     category: "3D Lighting",
     description:
@@ -76,7 +96,7 @@ const projects: Project[] = [
     type: "3D",
   },
   {
-    id: 5,
+    id: 7,
     title: "Street Environment Modeling",
     category: "3D Modelling",
     description:
@@ -86,7 +106,7 @@ const projects: Project[] = [
     type: "3D",
   },
   {
-    id: 6,
+    id: 8,
     title: "Fantasy Axe Modeling",
     category: "3D Modelling",
     description:
@@ -96,7 +116,7 @@ const projects: Project[] = [
     type: "3D",
   },
   {
-    id: 7,
+    id: 9,
     title: "Quadruped Rig System",
     category: "Rigging",
     description:
@@ -106,7 +126,7 @@ const projects: Project[] = [
     type: "3D",
   },
   {
-    id: 8,
+    id: 10,
     title: "Full-Body Character Rig",
     category: "Rigging",
     description:
@@ -118,7 +138,7 @@ const projects: Project[] = [
 
   // UI/UX Projects (placeholders)
   {
-    id: 9,
+    id: 11,
     title: "Sustainable Design System",
     category: "UI/UX",
     description: "The Sustainable Design System is a toolkit for creating eco-friendly, energy-efficient digital interfaces using optimized colors, typography, and UI components.",
@@ -127,7 +147,7 @@ const projects: Project[] = [
     type: "UI/UX",
   },
   {
-    id: 10,
+    id: 12,
     title: "Modern Real Estate App UI",
     category: "UI/UX",
     description:
@@ -137,7 +157,7 @@ const projects: Project[] = [
     type: "UI/UX",
   },
   {
-    id: 11,
+    id: 13,
     title: "Login/SignUp Page UI Concept",
     category: "UI/UX",
     description:
@@ -149,7 +169,7 @@ const projects: Project[] = [
 
   // Research Projects (placeholders)
   {
-    id: 12,
+    id: 14,
     title: "Sustainability, Gamification and User Retention: A Study on Eco-Conscious Gamification for Better User Engagement",
     category: "Research",
     description:
@@ -159,7 +179,7 @@ const projects: Project[] = [
     type: "Research",
   },
   {
-    id: 13,
+    id: 15,
     title: "Augmented Reality and Modern Multimedia Design",
     category: "Research",
     description:
@@ -167,28 +187,6 @@ const projects: Project[] = [
     image: bookchap,
     tags: ["AR", "Research", "Multimedia"],
     type: "Research",
-  },
-
-
-  {
-    id: 14,
-    title: "Medieval Castle Environment Design",
-    category: "3D Environment Design",
-    description:
-      "A castle environment created in Unreal Engine. This project showcases modular environment building, lighting, composition, and atmospheric design to bring a cinematic medieval world to life.",
-    image: castleenvironment,
-    tags: ["Unreal Engine", "3D Environment Art", "World Building"],
-    type: "3D",
-  },
-  {
-    id: 15,
-    title: "Stylized Low-Poly Isometric Bedroom",
-    category: "3D Modelling",
-    description:
-      "A stylized low-poly isometric bedroom designed with simple shapes, soft lighting, and playful colors. This project focuses on creating a cozy miniature scene with clear silhouettes, clean modeling, and an appealing, game-ready art style.",
-    image: isometricbedroom,
-    tags: ["Blender", "Stylized Art", "3D Modeling"],
-    type: "3D",
   },
 ];
 

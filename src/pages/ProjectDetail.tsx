@@ -110,6 +110,43 @@ const projects = {
     abstract: ""
   },
   4: {
+    title: "Medieval Castle Environment Design",
+    category: "3D Environment Design",
+    client: "Self Project",
+    duration: "1 Month",
+    year: "2023",
+    description: "A fully realized medieval castle environment created in Unreal Engine, developed by following Unreal Sensie’s tutorial series. The project focuses on modular environment building, lighting, composition, and atmospheric world-building to craft a cinematic, immersive scene.",
+    images: [castleenvironment2, castleenvironment],
+    tags: ["AR", "Research", "Multimedia"],
+    challenge: "Create a believable large-scale environment using modular assets while maintaining visual consistency. Achieve natural lighting, mood, and atmosphere suitable for a cinematic medieval setting. Balance detailed structures with readable silhouettes and clean scene composition.",
+    solution: "Followed a structured workflow inspired by Unreal Sensie’s tutorial. Used modular pieces for efficient world-building and scene scalability. Refined lighting, fog, and post-processing to enhance mood and depth.",
+    results: ["Built a visually engaging medieval castle environment in Unreal Engine.",
+              "Improved skills in modular design, lighting, composition, and real-time rendering.",
+              "Added a polished cinematic environment piece to the portfolio."
+            ],
+    technologies: ["Unreal Engine", "Quixel Bridge"],
+    link: "https://www.linkedin.com/posts/amanwhodesigns_unrealengine5-3d-3denvironment-activity-7004190361535328256-WX92?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC0ObJwBFFqqMaKhiLJ8favfAYcGpCQFJbc",
+    abstract: ""
+  },
+  5: {
+    title: "Stylized Low-Poly Isometric Bedroom",
+    category: "3D Modelling",
+    client: "Self Project",
+    duration: "2 Days",
+    year: "2022",
+    description: "A cozy stylized 3D bedroom created in a low-poly art style. This project focuses on clean shapes, simplified forms, and appealing color choices to create a small diorama that feels warm, playful, and visually readable from all angles.",
+    images: [isometricbedroom],
+    tags: ["Blender", "Isometric", "3D Modelling"],
+    challenge: "Design a compact scene with minimal geometry while keeping it visually interesting. Ensure every object—bed, shelf, props, floor, and walls—has clear silhouettes and fits the overall style. Balance colors and lighting to maintain the soft, stylized look without losing depth.",
+    solution: "Used simple modular shapes and exaggerated proportions to enhance charm and readability. Kept materials flat and clean to maintain the low-poly aesthetic. Placed props thoughtfully to add storytelling books, a cactus, lamp, and decor elements without cluttering the space.",
+    results: ["Created a polished stylized bedroom diorama suitable for animation or game environments.",
+              "Improved skills in low-poly modeling, composition, lighting, and miniature scene layout.",
+            ],
+    technologies: ["Blender"],
+    link: "https://www.linkedin.com/posts/amanwhodesigns_3dmodeling-bedroom-interior-activity-6988268505288617984-Nwmv?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC0ObJwBFFqqMaKhiLJ8favfAYcGpCQFJbc",
+    abstract: ""
+  },
+  6: {
     title: "Interior Living Space Modeling & Lighting",
     category: "3D Lighting",
     client: "Self Project",
@@ -129,7 +166,7 @@ const projects = {
     link: "",
     abstract: ""
   },
-  5: {
+  7: {
     title: "Street Environment Modeling",
     category: "3D Modelling",
     client: "Self Project",
@@ -149,7 +186,7 @@ const projects = {
     link: "",
     abstract: ""
   },
-  6: {
+  8: {
     title: "Fantasy Axe Modeling",
     category: "3D Modelling",
     client: "Self Project",
@@ -169,7 +206,7 @@ const projects = {
     link: "",
     abstract: ""
   },
-  7: {
+  9: {
     title: "Quadruped Rig System",
     category: "Rigging",
     client: "Self Project",
@@ -189,7 +226,7 @@ const projects = {
     link: "",
     abstract: ""
   },
-  8: {
+  10: {
     title: "Full-Body Character Rig",
     category: "Rigging",
     client: "Self Project",
@@ -209,7 +246,7 @@ const projects = {
     link: "",
     abstract: ""
   },
-  9: {
+  11: {
     title: "Sustainable Design System",
     category: "UI/UX",
     client: "Academic Research",
@@ -229,7 +266,7 @@ const projects = {
     link: "",
     abstract: ""
   },
-  10: {
+  12: {
     title: "Modern Real Estate App UI",
     category: "UI/UX",
     client: "Self Project",
@@ -249,7 +286,7 @@ const projects = {
     link: "",
     abstract: ""
   },
-  11: {
+  13: {
     title: "Login/SignUp Page UI Concept",
     category: "UI/UX",
     client: "Self Project",
@@ -267,7 +304,7 @@ const projects = {
     link: "https://www.behance.net/gallery/131240787/LoginSignUp-Page-UI-Concept",
     abstract: ""
   },
-  12: {
+  14: {
     title: "Sustainability, Gamification and User Retention: A Study on Eco-Conscious Gamification for Better User Engagement",
     category: "Research",
     client: "ICETDA 2025",
@@ -287,7 +324,7 @@ const projects = {
     link: "",
     abstract: "With increased usage of online platforms, the energy consumption of websites and applications has become a matter of sustainability. Traditional UI/UX elements such as high-resolution images, complex animations, and bold colors always stimulate interest but consume more power. This study proposes the development of a Sustainable UI Kit: reusable, energy-saving design assets that deliver user interaction without compromising on performance and compatibility. The package features green design elements like dark mode, image optimization, and minimized animation, and integrates gamified features—like progress bars and rewards—to maximize user retention. This study is design-focused, determining the most important elements required for a universally adaptable sustainable interface. The study is targeted at stakeholders involved in UI/UX design and digital sustainability. By evaluating the kit’s impact on energy consumption and interaction behavior through prototyping, this study contributes a practical framework for building visually appealing and ecologically conscious digital interfaces. "
   },
-  13: {
+  15: {
     title: "Augmented Reality and Modern Multimedia Design",
     category: "Research",
     client: "Contemporary Approaches in Art and Design (Graphic Era Hill University)",
@@ -303,43 +340,7 @@ const projects = {
     link: "",
     abstract: "Augmented Reality (AR) has rapidly evolved from an emerging technology to a central instrument in modern multimedia design, reshaping user experience and interaction across domains such as education, entertainment, marketing, and healthcare. This paper presents the integration of AR into multimedia processes, looking at how immersive technologies enhance storytelling, interactivity, and user engagement. It explores the tech fundamentals behind such developments — namely ARKit, ARCore, and AI-enhanced environment mapping — that are making AR interactions more intuitive and widespread. Design principles that help in good AR content creation have been elaborated upon, with the issues for designers outlined and the solutions listed. By integrating empirical findings from prior research and current industrial developments, this article provides a critical overview of the way AR is reshaping the terrain of digital media, and predicts future directions for more ubiquitous, self-adaptive, and eco-friendly AR-based multimedia experiences."
   },
-  14: {
-    title: "Medieval Castle Environment Design",
-    category: "3D Environment Design",
-    client: "Self Project",
-    duration: "1 Month",
-    year: "2023",
-    description: "A fully realized medieval castle environment created in Unreal Engine, developed by following Unreal Sensie’s tutorial series. The project focuses on modular environment building, lighting, composition, and atmospheric world-building to craft a cinematic, immersive scene.",
-    images: [castleenvironment2, castleenvironment],
-    tags: ["AR", "Research", "Multimedia"],
-    challenge: "Create a believable large-scale environment using modular assets while maintaining visual consistency. Achieve natural lighting, mood, and atmosphere suitable for a cinematic medieval setting. Balance detailed structures with readable silhouettes and clean scene composition.",
-    solution: "Followed a structured workflow inspired by Unreal Sensie’s tutorial. Used modular pieces for efficient world-building and scene scalability. Refined lighting, fog, and post-processing to enhance mood and depth.",
-    results: ["Built a visually engaging medieval castle environment in Unreal Engine.",
-              "Improved skills in modular design, lighting, composition, and real-time rendering.",
-              "Added a polished cinematic environment piece to the portfolio."
-            ],
-    technologies: ["Unreal Engine", "Quixel Bridge"],
-    link: "https://www.linkedin.com/posts/amanwhodesigns_unrealengine5-3d-3denvironment-activity-7004190361535328256-WX92?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC0ObJwBFFqqMaKhiLJ8favfAYcGpCQFJbc",
-    abstract: ""
-  },
-  15: {
-    title: "Stylized Low-Poly Isometric Bedroom",
-    category: "3D Modelling",
-    client: "Self Project",
-    duration: "2 Days",
-    year: "2022",
-    description: "A cozy stylized 3D bedroom created in a low-poly art style. This project focuses on clean shapes, simplified forms, and appealing color choices to create a small diorama that feels warm, playful, and visually readable from all angles.",
-    images: [isometricbedroom],
-    tags: ["Blender", "Isometric", "3D Modelling"],
-    challenge: "Design a compact scene with minimal geometry while keeping it visually interesting. Ensure every object—bed, shelf, props, floor, and walls—has clear silhouettes and fits the overall style. Balance colors and lighting to maintain the soft, stylized look without losing depth.",
-    solution: "Used simple modular shapes and exaggerated proportions to enhance charm and readability. Kept materials flat and clean to maintain the low-poly aesthetic. Placed props thoughtfully to add storytelling books, a cactus, lamp, and decor elements without cluttering the space.",
-    results: ["Created a polished stylized bedroom diorama suitable for animation or game environments.",
-              "Improved skills in low-poly modeling, composition, lighting, and miniature scene layout.",
-            ],
-    technologies: ["Blender"],
-    link: "https://www.linkedin.com/posts/amanwhodesigns_3dmodeling-bedroom-interior-activity-6988268505288617984-Nwmv?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC0ObJwBFFqqMaKhiLJ8favfAYcGpCQFJbc",
-    abstract: ""
-  },
+
 }
 const ProjectDetail = () => {
   const [isOpen, setIsOpen] = useState(false);
