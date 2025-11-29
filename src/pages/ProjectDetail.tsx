@@ -48,6 +48,11 @@ import castleenvironment2 from "@/assets/CastleEnvironmentGif.gif"
 
 import isometricbedroom from "@/assets/isometricbedroom.jpg"
 
+import champagne from "@/assets/ChampagneFront.jpg"
+import champagne2 from "@/assets/ChampagneCloseUpCap.jpg"
+import champagne3 from "@/assets/ChampagneCloseUpGlassBottom.jpg"
+import champagne4 from "@/assets/ChampagneCloseUpGlass.jpg"
+
 const projects = {
   1: {
     title: "Rural Still Life – A Photorealistic Study in Light & Texture",
@@ -70,6 +75,28 @@ const projects = {
     abstract: ""
   },
   2: {
+    title: "Elegant Prosecco Look Development",
+    category: "Product Visualization",
+    client: "Self Project",
+    duration: "2 Days",
+    year: "2025",
+    description: "A high-end 3D recreation of a luxury Prosecco bottle and flute glass, focusing on precision lighting, premium materials, and realistic liquid simulation. Every element from the glass refraction to the metallic foil was crafted from scratch to achieve a polished, commercial-grade product render.",
+    images: [champagne, champagne2, champagne3, champagne4],
+    tags: ["3D Modelling", "3D Texturing", "Product Visualization"],
+    challenge: "To create a photorealistic product shot inspired by Fashion’s Prosecco branding, capturing the elegance and premium feel of champagne advertising. The goal was to achieve clean reflections, accurate refraction through glass, realistic liquid behavior, detailed foil deformation, and high-end studio lighting while relying entirely on custom materials and simulations rather than presets.",
+    solution: "Modeled the bottle, foil wrap, and champagne flute from scratch in Autodesk Maya. Created realistic champagne liquid using AI Standard Surface, with custom transmission, subsurface, and specular settings. Simulated bubbles and foam using nParticles, ensuring natural rise speed, buoyancy, and clustering. Developed all textures including foil, label, and glass micro-imperfections in Substance 3D Painter. Set up a controlled black-studio lighting environment in Maya using Arnold, with carefully placed area lights to create sharp highlights, soft reflections, and clean silhouettes. Rendered multiple close-ups to showcase surface quality, refraction accuracy, and fine details.",
+    results: [
+      "Achieved a premium, photorealistic champagne advertisement look.",
+      "Successfully captured high-end product lighting using minimal elements and precise highlight control.",
+      "Developed advanced materials for glass, metallic foil, and liquid using AI Standard Surface.",
+      "Strengthened skills in simulation (bubbles/foam), look-development, and commercial product rendering.",
+      "Produced a fully custom scene with no presets of any kind, modeling, texturing, lighting, and rendering entirely handcrafted."
+    ],
+    technologies: ["Autodesk Maya","Substance 3D Painter"],
+    link: "",
+    abstract: ""
+  },
+  3: {
     title: "Concert Electric Haze",
     category: "3D Lighting",
     client: "Self Project",
@@ -89,7 +116,7 @@ const projects = {
     link: "",
     abstract: ""
   },
-  3: {
+  4: {
     title: "[WIP] Female Tactical Character",
     category: "3D Texturing",
     client: "Self Project",
@@ -109,7 +136,7 @@ const projects = {
     link: "https://www.artstation.com/artwork/y4Pxkx",
     abstract: ""
   },
-  4: {
+  5: {
     title: "Medieval Castle Environment Design",
     category: "3D Environment Design",
     client: "Self Project",
@@ -128,7 +155,7 @@ const projects = {
     link: "https://www.linkedin.com/posts/amanwhodesigns_unrealengine5-3d-3denvironment-activity-7004190361535328256-WX92?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC0ObJwBFFqqMaKhiLJ8favfAYcGpCQFJbc",
     abstract: ""
   },
-  5: {
+  6: {
     title: "Stylized Low-Poly Isometric Bedroom",
     category: "3D Modelling",
     client: "Self Project",
@@ -146,7 +173,7 @@ const projects = {
     link: "https://www.linkedin.com/posts/amanwhodesigns_3dmodeling-bedroom-interior-activity-6988268505288617984-Nwmv?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC0ObJwBFFqqMaKhiLJ8favfAYcGpCQFJbc",
     abstract: ""
   },
-  6: {
+  7: {
     title: "Interior Living Space Modeling & Lighting",
     category: "3D Lighting",
     client: "Self Project",
@@ -166,7 +193,7 @@ const projects = {
     link: "",
     abstract: ""
   },
-  7: {
+  8: {
     title: "Street Environment Modeling",
     category: "3D Modelling",
     client: "Self Project",
@@ -186,7 +213,7 @@ const projects = {
     link: "",
     abstract: ""
   },
-  8: {
+  9: {
     title: "Fantasy Axe Modeling",
     category: "3D Modelling",
     client: "Self Project",
@@ -206,7 +233,7 @@ const projects = {
     link: "",
     abstract: ""
   },
-  9: {
+  10: {
     title: "Quadruped Rig System",
     category: "Rigging",
     client: "Self Project",
@@ -226,7 +253,7 @@ const projects = {
     link: "",
     abstract: ""
   },
-  10: {
+  11: {
     title: "Full-Body Character Rig",
     category: "Rigging",
     client: "Self Project",
@@ -246,7 +273,7 @@ const projects = {
     link: "",
     abstract: ""
   },
-  11: {
+  12: {
     title: "Sustainable Design System",
     category: "UI/UX",
     client: "Academic Research",
@@ -266,7 +293,7 @@ const projects = {
     link: "",
     abstract: ""
   },
-  12: {
+  13: {
     title: "Modern Real Estate App UI",
     category: "UI/UX",
     client: "Self Project",
@@ -286,7 +313,7 @@ const projects = {
     link: "",
     abstract: ""
   },
-  13: {
+  14: {
     title: "Login/SignUp Page UI Concept",
     category: "UI/UX",
     client: "Self Project",
@@ -304,7 +331,7 @@ const projects = {
     link: "https://www.behance.net/gallery/131240787/LoginSignUp-Page-UI-Concept",
     abstract: ""
   },
-  14: {
+  15: {
     title: "Sustainability, Gamification and User Retention: A Study on Eco-Conscious Gamification for Better User Engagement",
     category: "Research",
     client: "ICETDA 2025",
@@ -324,7 +351,7 @@ const projects = {
     link: "",
     abstract: "With increased usage of online platforms, the energy consumption of websites and applications has become a matter of sustainability. Traditional UI/UX elements such as high-resolution images, complex animations, and bold colors always stimulate interest but consume more power. This study proposes the development of a Sustainable UI Kit: reusable, energy-saving design assets that deliver user interaction without compromising on performance and compatibility. The package features green design elements like dark mode, image optimization, and minimized animation, and integrates gamified features—like progress bars and rewards—to maximize user retention. This study is design-focused, determining the most important elements required for a universally adaptable sustainable interface. The study is targeted at stakeholders involved in UI/UX design and digital sustainability. By evaluating the kit’s impact on energy consumption and interaction behavior through prototyping, this study contributes a practical framework for building visually appealing and ecologically conscious digital interfaces. "
   },
-  15: {
+  16: {
     title: "Augmented Reality and Modern Multimedia Design",
     category: "Research",
     client: "Contemporary Approaches in Art and Design (Graphic Era Hill University)",
@@ -340,7 +367,6 @@ const projects = {
     link: "",
     abstract: "Augmented Reality (AR) has rapidly evolved from an emerging technology to a central instrument in modern multimedia design, reshaping user experience and interaction across domains such as education, entertainment, marketing, and healthcare. This paper presents the integration of AR into multimedia processes, looking at how immersive technologies enhance storytelling, interactivity, and user engagement. It explores the tech fundamentals behind such developments — namely ARKit, ARCore, and AI-enhanced environment mapping — that are making AR interactions more intuitive and widespread. Design principles that help in good AR content creation have been elaborated upon, with the issues for designers outlined and the solutions listed. By integrating empirical findings from prior research and current industrial developments, this article provides a critical overview of the way AR is reshaping the terrain of digital media, and predicts future directions for more ubiquitous, self-adaptive, and eco-friendly AR-based multimedia experiences."
   },
-
 }
 const ProjectDetail = () => {
   const [isOpen, setIsOpen] = useState(false);

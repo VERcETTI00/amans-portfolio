@@ -22,6 +22,7 @@ import bookchap from "@/assets/bookchap.jpg";
 import loginsignup from "@/assets/LoginSignup.jpg";
 import castleenvironment from "@/assets/CastleEnvironment.png"
 import isometricbedroom from "@/assets/isometricbedroom.jpg"
+import champagne from "@/assets/ChampagneFront.jpg"
 
 interface Project {
   id: number;
@@ -47,6 +48,16 @@ const projects: Project[] = [
   },
   {
     id: 2,
+    title: "Elegant Prosecco Look Development",
+    category: "Product Visualization",
+    description:
+      "Photorealistic 3D Prosecco visualization created from scratch with detailed textures, accurate liquid shading, and refined lighting.",
+    image: champagne,
+    tags: ["3D Modelling", "3D Texturing", "Product Visualization"],
+    type: "3D",
+  },
+  {
+    id: 3,
     title: "Concert Electric Haze",
     category: "3D Lighting",
     description:
@@ -56,7 +67,7 @@ const projects: Project[] = [
     type: "3D",
   },
   {
-    id: 3,
+    id: 4,
     title: "[WIP] Female Tactical Character",
     category: "3D Texturing",
     description:
@@ -66,7 +77,7 @@ const projects: Project[] = [
     type: "3D",
   },
   {
-    id: 4,
+    id: 5,
     title: "Medieval Castle Environment Design",
     category: "3D Environment Design",
     description:
@@ -76,7 +87,7 @@ const projects: Project[] = [
     type: "3D",
   },
   {
-    id: 5,
+    id: 6,
     title: "Stylized Low-Poly Isometric Bedroom",
     category: "3D Modelling",
     description:
@@ -86,7 +97,7 @@ const projects: Project[] = [
     type: "3D",
   },
   {
-    id: 6,
+    id: 7,
     title: "Interior Living Space Modeling & Lighting",
     category: "3D Lighting",
     description:
@@ -96,7 +107,7 @@ const projects: Project[] = [
     type: "3D",
   },
   {
-    id: 7,
+    id: 8,
     title: "Street Environment Modeling",
     category: "3D Modelling",
     description:
@@ -106,7 +117,7 @@ const projects: Project[] = [
     type: "3D",
   },
   {
-    id: 8,
+    id: 9,
     title: "Fantasy Axe Modeling",
     category: "3D Modelling",
     description:
@@ -116,7 +127,7 @@ const projects: Project[] = [
     type: "3D",
   },
   {
-    id: 9,
+    id: 10,
     title: "Quadruped Rig System",
     category: "Rigging",
     description:
@@ -126,7 +137,7 @@ const projects: Project[] = [
     type: "3D",
   },
   {
-    id: 10,
+    id: 11,
     title: "Full-Body Character Rig",
     category: "Rigging",
     description:
@@ -138,7 +149,7 @@ const projects: Project[] = [
 
   // UI/UX Projects (placeholders)
   {
-    id: 11,
+    id: 12,
     title: "Sustainable Design System",
     category: "UI/UX",
     description: "The Sustainable Design System is a toolkit for creating eco-friendly, energy-efficient digital interfaces using optimized colors, typography, and UI components.",
@@ -147,7 +158,7 @@ const projects: Project[] = [
     type: "UI/UX",
   },
   {
-    id: 12,
+    id: 13,
     title: "Modern Real Estate App UI",
     category: "UI/UX",
     description:
@@ -157,7 +168,7 @@ const projects: Project[] = [
     type: "UI/UX",
   },
   {
-    id: 13,
+    id: 14,
     title: "Login/SignUp Page UI Concept",
     category: "UI/UX",
     description:
@@ -169,7 +180,7 @@ const projects: Project[] = [
 
   // Research Projects (placeholders)
   {
-    id: 14,
+    id: 15,
     title: "Sustainability, Gamification and User Retention: A Study on Eco-Conscious Gamification for Better User Engagement",
     category: "Research",
     description:
@@ -179,7 +190,7 @@ const projects: Project[] = [
     type: "Research",
   },
   {
-    id: 15,
+    id: 16,
     title: "Augmented Reality and Modern Multimedia Design",
     category: "Research",
     description:
