@@ -23,6 +23,8 @@ import loginsignup from "@/assets/LoginSignup.jpg";
 import castleenvironment from "@/assets/CastleEnvironment.png"
 import isometricbedroom from "@/assets/isometricbedroom.jpg"
 import champagne from "@/assets/ChampagneFront.jpg"
+import shalini from "@/assets/Shalini.png"
+import prepeat from "@/assets/PrepeatUser.png"
 
 interface Project {
   id: number;
@@ -159,6 +161,24 @@ const projects: Project[] = [
   },
   {
     id: 13,
+    title: "Dr. Shalini Narayanan – Personal Portfolio Website",
+    category: "UI/UX",
+    description: "Modern academic portfolio showcasing Dr. Shalini Narayanan’s teaching, research, publications, and media expertise with clarity.",
+    image: shalini,
+    tags: ["UI/UX", "Website Design", "Portfolio"],
+    type: "UI/UX",
+  },
+  {
+    id: 14,
+    title: "Prepeat – Home-Cooked Meal & Kitchen Services App",
+    category: "UI/UX",
+    description: "Prepeat is a seamless food-tech app for booking home-cooked meals, personal cooks, catering, and kitchen services.",
+    image: prepeat,
+    tags: ["UI/UX", "App Design", "Mobile"],
+    type: "UI/UX",
+  },
+  {
+    id: 15,
     title: "Modern Real Estate App UI",
     category: "UI/UX",
     description:
@@ -168,7 +188,7 @@ const projects: Project[] = [
     type: "UI/UX",
   },
   {
-    id: 14,
+    id: 16,
     title: "Login/SignUp Page UI Concept",
     category: "UI/UX",
     description:
@@ -177,10 +197,11 @@ const projects: Project[] = [
     tags: ["UI/UX", "Mobile", "App Design"],
     type: "UI/UX",
   },
+  
 
   // Research Projects (placeholders)
   {
-    id: 15,
+    id: 17,
     title: "Sustainability, Gamification and User Retention: A Study on Eco-Conscious Gamification for Better User Engagement",
     category: "Research",
     description:
@@ -190,7 +211,7 @@ const projects: Project[] = [
     type: "Research",
   },
   {
-    id: 16,
+    id: 18,
     title: "Augmented Reality and Modern Multimedia Design",
     category: "Research",
     description:

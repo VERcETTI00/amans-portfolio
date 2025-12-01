@@ -53,6 +53,13 @@ import champagne2 from "@/assets/ChampagneCloseUpCap.jpg"
 import champagne3 from "@/assets/ChampagneCloseUpGlassBottom.jpg"
 import champagne4 from "@/assets/ChampagneCloseUpGlass.jpg"
 
+import shalini from "@/assets/Shalini.png"
+
+import prepeat from "@/assets/PrepeatUser.png"
+import prepeat2 from "@/assets/PrepeatPartner.png"
+import prepeat3 from "@/assets/PrepeatPartnerProto.png"
+import prepeat4 from "@/assets/PrepeatUserProto.png"
+
 const projects = {
   1: {
     title: "Rural Still Life – A Photorealistic Study in Light & Texture",
@@ -294,6 +301,47 @@ const projects = {
     abstract: ""
   },
   13: {
+    title: "Dr. Shalini Narayanan – Personal Portfolio Website",
+    category: "UI/UX",
+    client: "Dr. Shalini Narayanan",
+    duration: "2 Weeks",
+    year: "2024",
+    description: "A modern, minimalist portfolio website designed for a media academic, author, and researcher. The interface focuses on clarity, credibility, and effortless information discovery, presenting decades of work through a clean, structured layout.",
+    images: [shalini],
+    tags: ["UI/UX", "Figma", "Website Design"],
+    challenge: "Create a digital identity for a seasoned academic and author whose work spans teaching, research, media outreach, and publications. The website needed to present large amounts of text-heavy information articles, services, achievements, videos, and books without overwhelming the user. Maintaining professionalism, readability, and visual hierarchy was key. Additionally, the design had to balance academic seriousness with modern aesthetics while ensuring easy navigation across multiple content categories.",
+    solution: "Designed a spacious, typography-driven layout that enhances readability and gives each section room to breathe. Implemented a modular content structure with sections such as About, Services, Academic Teaching, Publications, Achievements allowing users to quickly scan and access relevant information. Used a clean white layout with subtle accents to reinforce credibility and focus attention on content. Integrated card-based components for books and publications, enabling quick exploration with minimal cognitive load. Visuals such as photos, article covers, and embedded videos were used strategically to break text monotony and keep the experience engaging.",
+    results: [
+      "Delivered a professional and user-friendly academic portfolio that clearly showcases expertise, credentials, and body of work.",
+      "Created a scalable design system that supports additional content, categories, and updates without breaking the layout.",
+      "Effectively positioned the subject as an authoritative voice by combining clarity, simplicity, and visual storytelling."
+    ],
+    technologies: ["Figma"],
+    link: "https://shalininarayanan.in/",
+    abstract: ""
+  },
+  14: {
+    title: "Prepeat – Home-Cooked Meal & Kitchen Services App",
+    category: "UI/UX",
+    client: "Ricoz - Prepeat",
+    duration: "1 Month",
+    year: "2024",
+    description: "Prepeat is a modern food-tech mobile application designed to help users book home-cooked meals, personal cooks, catering services, and on-demand kitchen assistance. The UI focuses on clarity, speed, and effortless service booking, supported by a complete partner-side app for cooks and service providers.",
+    images: [prepeat, prepeat2, prepeat3, prepeat4],
+    tags: ["UI/UX", "Figma", "Mobile App Design", "Food-Tech", "Service Booking"],
+    challenge: "Design a triple-app ecosystem User App, Partner App and Delivery Partner App. The app needed to be capable of handling multiple services like daily meals, special menus, catering, and home-cook bookings. The interface needed to simplify complex flows such as menu customization, subscription orders, scheduling, partner earnings, and real-time order tracking. The challenge was to maintain consistency and ease of use across 100+ interconnected screens without confusing or overwhelming the user.",
+    solution: "Created a clean, modular layout with consistent spacing, clear typography, and strong visual hierarchy. Used card-based components for services, menus, and offers to streamline browsing and ordering. Designed intuitive flows for booking, payments, partner onboarding, and earnings tracking. Maintained a warm, welcoming color palette and illustrations to reinforce Prepeat’s identity and build trust. Developed highly structured prototypes for both User, Partner, and Delivery Partner apps to ensure smooth, predictable navigation across all touchpoints.",
+    results: [
+      "Delivered a fully connected, high-fidelity mobile design system for both consumers and partners.",
+      "Simplified complex order journeys such as subscriptions, custom meals, catering, and service scheduling",
+      "Improved usability with consistent patterns, clean visual hierarchy, and frictionless interactions.",
+      "Produced a scalable UI foundation that supports future features and business expansion."
+    ],
+    technologies: ["Figma"],
+    link: "",
+    abstract: ""
+  },
+  15: {
     title: "Modern Real Estate App UI",
     category: "UI/UX",
     client: "Self Project",
@@ -313,7 +361,7 @@ const projects = {
     link: "",
     abstract: ""
   },
-  14: {
+  16: {
     title: "Login/SignUp Page UI Concept",
     category: "UI/UX",
     client: "Self Project",
@@ -331,7 +379,7 @@ const projects = {
     link: "https://www.behance.net/gallery/131240787/LoginSignUp-Page-UI-Concept",
     abstract: ""
   },
-  15: {
+  17: {
     title: "Sustainability, Gamification and User Retention: A Study on Eco-Conscious Gamification for Better User Engagement",
     category: "Research",
     client: "ICETDA 2025",
@@ -351,7 +399,7 @@ const projects = {
     link: "",
     abstract: "With increased usage of online platforms, the energy consumption of websites and applications has become a matter of sustainability. Traditional UI/UX elements such as high-resolution images, complex animations, and bold colors always stimulate interest but consume more power. This study proposes the development of a Sustainable UI Kit: reusable, energy-saving design assets that deliver user interaction without compromising on performance and compatibility. The package features green design elements like dark mode, image optimization, and minimized animation, and integrates gamified features—like progress bars and rewards—to maximize user retention. This study is design-focused, determining the most important elements required for a universally adaptable sustainable interface. The study is targeted at stakeholders involved in UI/UX design and digital sustainability. By evaluating the kit’s impact on energy consumption and interaction behavior through prototyping, this study contributes a practical framework for building visually appealing and ecologically conscious digital interfaces. "
   },
-  16: {
+  18: {
     title: "Augmented Reality and Modern Multimedia Design",
     category: "Research",
     client: "Contemporary Approaches in Art and Design (Graphic Era Hill University)",
