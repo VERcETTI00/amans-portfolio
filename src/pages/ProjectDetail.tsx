@@ -60,6 +60,17 @@ import prepeat2 from "@/assets/PrepeatPartner.png"
 import prepeat3 from "@/assets/PrepeatPartnerProto.png"
 import prepeat4 from "@/assets/PrepeatUserProto.png"
 
+import reception from "@/assets/ReceptionInterior_01.jpg"
+import reception2 from "@/assets/ReceptionInterior_02.jpg"
+import reception3 from "@/assets/ReceptionInterior_03.jpg"
+import reception4 from "@/assets/ReceptionInterior_04.png"
+
+import watch from "@/assets/Watch_01.jpg"
+import watch2 from "@/assets/Watch_02.jpg"
+import watch3 from "@/assets/Watch_03.jpg"
+import watch4 from "@/assets/Watch_04.jpg"
+import watch5 from "@/assets/Watch_05.png"
+
 const projects = {
   1: {
     title: "Rural Still Life – A Photorealistic Study in Light & Texture",
@@ -104,6 +115,26 @@ const projects = {
     abstract: ""
   },
   3: {
+    title: "Modern Reception Interior Visualization",
+    category: "Interior Visualization",
+    client: "Self Project",
+    duration: "2 Week",
+    year: "2026",
+    description: "A contemporary 3D interior visualization of a modern reception space, focused on architectural balance, material contrast, and calm, premium lighting. The scene emphasizes clean geometry, subtle textures, and controlled illumination to achieve a professional, design-forward interior render suitable for commercial and architectural presentation.",
+    images: [reception, reception2, reception3, reception4],
+    tags: ["3D Modelling", "3D Lighting", "3D Texturing", "Maya", "interior Visualization"],
+    challenge: "To create a modern reception interior that feels minimal yet premium, avoiding visual clutter while maintaining realism. The key challenge was achieving believable interior lighting, balanced exposure, and material separation using subtle tones, while keeping the composition clean and architecturally accurate. Special attention was required to prevent flat surfaces, harsh lighting, and unrealistic material responses.",
+    solution: "Modeled all architectural elements, furniture, and fixtures from scratch in a 3D workflow. Developed concrete, wood, and matte surface materials with controlled roughness to maintain realism without excessive noise. Designed a layered lighting setup using soft ceiling lights and indirect illumination to enhance depth, edge definition, and spatial clarity. Carefully adjusted light intensity and color temperature to create a calm, welcoming atmosphere. Rendered multiple lighting variations to refine mood and realism, ensuring clean shadows, smooth gradients, and professional interior balance.",
+    results: [
+      "Delivered a clean, modern reception interior with strong architectural presence.",
+      "Achieved realistic interior lighting with soft shadows and natural falloff.",
+      "Created believable material contrast between wood, concrete, and matte surfaces."
+    ],
+    technologies: ["Autodesk Maya"],
+    link: "",
+    abstract: ""
+  },
+  4: {
     title: "Concert Electric Haze",
     category: "3D Lighting",
     client: "Self Project",
@@ -123,7 +154,7 @@ const projects = {
     link: "",
     abstract: ""
   },
-  4: {
+  5: {
     title: "[WIP] Female Tactical Character",
     category: "3D Texturing",
     client: "Self Project",
@@ -143,7 +174,27 @@ const projects = {
     link: "https://www.artstation.com/artwork/y4Pxkx",
     abstract: ""
   },
-  5: {
+  6: {
+    title: "Oris Aquis Watch – Product Visualization",
+    category: "Product Visualization",
+    client: "Self Project",
+    duration: "1 Week",
+    year: "2025",
+    description: "High-end 3D watch visualization emphasizing precise hard-surface modeling, realistic brushed and polished stainless-steel materials, detailed engravings, and carefully controlled studio lighting to achieve a premium, photorealistic, commercial-ready product render.",
+    images: [watch, watch2, watch3, watch4, watch5],
+    tags: ["3D Texturing", "3D Modelling", "3D Lighting", "Maya", "Substance 3D Painter"],
+    challenge: "To recreate a premium diver watch inspired by the Oris Aquis, capturing the weight, precision, and luxury associated with high-end mechanical timepieces. The primary challenge was achieving realistic metal behavior—accurate edge wear, brushed versus polished transitions, sharp engravings, and believable reflections—without losing form clarity. Another key difficulty was maintaining realism at extreme close-up angles, where even minor shading or modeling errors become obvious.",
+    solution: "The entire watch was modeled from scratch with a strong focus on clean topology and mechanical accuracy, including the case, bezel teeth, crown, bracelet links, clasp, and internal components visible through the case back. Special attention was given to chamfers, tolerances, and micro-details to ensure realism. Materials were carefully developed to differentiate brushed stainless steel, polished steel, sapphire glass, lume-filled indices, and engraved surfaces. Roughness variation and subtle surface imperfections were added to avoid a “CG-perfect” look. A controlled studio lighting setup was created to enhance edge highlights, engravings, and curvature while preserving contrast and depth. Multiple camera angles were rendered, including macro close-ups, hero shots, and technical views, to showcase craftsmanship, material quality, and mechanical detail.",
+    results: [
+      "Produced a photorealistic, premium watch render suitable for commercial or advertising use.",
+      "Achieved realistic stainless-steel materials with convincing brushed and polished transitions.",
+      "Captured sharp engravings, clean reflections, and high-detail close-ups without artifacts."
+    ],
+    technologies: ["Autodesk Maya", "Substance 3D Painter"],
+    link: "",
+    abstract: ""
+  },
+  7: {
     title: "Medieval Castle Environment Design",
     category: "3D Environment Design",
     client: "Self Project",
@@ -162,7 +213,7 @@ const projects = {
     link: "https://www.linkedin.com/posts/amanwhodesigns_unrealengine5-3d-3denvironment-activity-7004190361535328256-WX92?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC0ObJwBFFqqMaKhiLJ8favfAYcGpCQFJbc",
     abstract: ""
   },
-  6: {
+  8: {
     title: "Stylized Low-Poly Isometric Bedroom",
     category: "3D Modelling",
     client: "Self Project",
@@ -180,7 +231,7 @@ const projects = {
     link: "https://www.linkedin.com/posts/amanwhodesigns_3dmodeling-bedroom-interior-activity-6988268505288617984-Nwmv?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC0ObJwBFFqqMaKhiLJ8favfAYcGpCQFJbc",
     abstract: ""
   },
-  7: {
+  9: {
     title: "Interior Living Space Modeling & Lighting",
     category: "3D Lighting",
     client: "Self Project",
@@ -200,7 +251,7 @@ const projects = {
     link: "",
     abstract: ""
   },
-  8: {
+  10: {
     title: "Street Environment Modeling",
     category: "3D Modelling",
     client: "Self Project",
@@ -220,7 +271,7 @@ const projects = {
     link: "",
     abstract: ""
   },
-  9: {
+  11: {
     title: "Fantasy Axe Modeling",
     category: "3D Modelling",
     client: "Self Project",
@@ -240,7 +291,7 @@ const projects = {
     link: "",
     abstract: ""
   },
-  10: {
+  12: {
     title: "Quadruped Rig System",
     category: "Rigging",
     client: "Self Project",
@@ -260,7 +311,7 @@ const projects = {
     link: "",
     abstract: ""
   },
-  11: {
+  13: {
     title: "Full-Body Character Rig",
     category: "Rigging",
     client: "Self Project",
@@ -280,7 +331,7 @@ const projects = {
     link: "",
     abstract: ""
   },
-  12: {
+  14: {
     title: "Sustainable Design System",
     category: "UI/UX",
     client: "Academic Research",
@@ -300,7 +351,7 @@ const projects = {
     link: "",
     abstract: ""
   },
-  13: {
+  15: {
     title: "Dr. Shalini Narayanan – Personal Portfolio Website",
     category: "UI/UX",
     client: "Dr. Shalini Narayanan",
@@ -320,7 +371,7 @@ const projects = {
     link: "https://shalininarayanan.in/",
     abstract: ""
   },
-  14: {
+  16: {
     title: "Prepeat – Home-Cooked Meal & Kitchen Services App",
     category: "UI/UX",
     client: "Ricoz - Prepeat",
@@ -341,7 +392,7 @@ const projects = {
     link: "",
     abstract: ""
   },
-  15: {
+  17: {
     title: "Modern Real Estate App UI",
     category: "UI/UX",
     client: "Self Project",
@@ -361,7 +412,7 @@ const projects = {
     link: "",
     abstract: ""
   },
-  16: {
+  18: {
     title: "Login/SignUp Page UI Concept",
     category: "UI/UX",
     client: "Self Project",
@@ -379,7 +430,7 @@ const projects = {
     link: "https://www.behance.net/gallery/131240787/LoginSignUp-Page-UI-Concept",
     abstract: ""
   },
-  17: {
+  19: {
     title: "Sustainability, Gamification and User Retention: A Study on Eco-Conscious Gamification for Better User Engagement",
     category: "Research",
     client: "ICETDA 2025",
@@ -399,7 +450,7 @@ const projects = {
     link: "",
     abstract: "With increased usage of online platforms, the energy consumption of websites and applications has become a matter of sustainability. Traditional UI/UX elements such as high-resolution images, complex animations, and bold colors always stimulate interest but consume more power. This study proposes the development of a Sustainable UI Kit: reusable, energy-saving design assets that deliver user interaction without compromising on performance and compatibility. The package features green design elements like dark mode, image optimization, and minimized animation, and integrates gamified features—like progress bars and rewards—to maximize user retention. This study is design-focused, determining the most important elements required for a universally adaptable sustainable interface. The study is targeted at stakeholders involved in UI/UX design and digital sustainability. By evaluating the kit’s impact on energy consumption and interaction behavior through prototyping, this study contributes a practical framework for building visually appealing and ecologically conscious digital interfaces. "
   },
-  18: {
+  20: {
     title: "Augmented Reality and Modern Multimedia Design",
     category: "Research",
     client: "Contemporary Approaches in Art and Design (Graphic Era Hill University)",

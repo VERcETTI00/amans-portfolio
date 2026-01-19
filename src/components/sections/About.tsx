@@ -11,7 +11,9 @@ const skills = [
   "User Experience Design", 
   "Prototyping",
   "Design Systems",
-  "Problem Solving"
+  "Problem Solving",
+  "Communication",
+  "Team Collaboration"
 ]
 
 const tools = [

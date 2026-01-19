@@ -25,6 +25,8 @@ import isometricbedroom from "@/assets/isometricbedroom.jpg"
 import champagne from "@/assets/ChampagneFront.jpg"
 import shalini from "@/assets/Shalini.png"
 import prepeat from "@/assets/PrepeatUser.png"
+import reception from "@/assets/ReceptionInterior_01.jpg"
+import watch from "@/assets/Watch_03.jpg"
 
 interface Project {
   id: number;
@@ -60,6 +62,16 @@ const projects: Project[] = [
   },
   {
     id: 3,
+    title: "Modern Reception Interior Visualization",
+    category: "Interior Visualization",
+    description:
+      "Clean, modern reception interior showcasing lighting, material contrast, and architectural precision in a calm workspace.",
+    image: reception,
+    tags: ["3D Modelling", "3D Lighting", "Interior"],
+    type: "3D",
+  },
+  {
+    id: 4,
     title: "Concert Electric Haze",
     category: "3D Lighting",
     description:
@@ -69,7 +81,7 @@ const projects: Project[] = [
     type: "3D",
   },
   {
-    id: 4,
+    id: 5,
     title: "[WIP] Female Tactical Character",
     category: "3D Texturing",
     description:
@@ -79,7 +91,17 @@ const projects: Project[] = [
     type: "3D",
   },
   {
-    id: 5,
+    id: 6,
+    title: "Oris Aquis Watch – Product Visuailization",
+    category: "Product Visualization",
+    description:
+      "High-end 3D watch visualization focusing on precision modeling, premium materials, and studio-grade lighting realism.",
+    image: watch,
+    tags: ["3D Modelling", "3D Texturing", "Product Visualization"],
+    type: "3D",
+  },
+  {
+    id: 6,
     title: "Medieval Castle Environment Design",
     category: "3D Environment Design",
     description:
@@ -89,7 +111,7 @@ const projects: Project[] = [
     type: "3D",
   },
   {
-    id: 6,
+    id: 7,
     title: "Stylized Low-Poly Isometric Bedroom",
     category: "3D Modelling",
     description:
@@ -99,7 +121,7 @@ const projects: Project[] = [
     type: "3D",
   },
   {
-    id: 7,
+    id: 8,
     title: "Interior Living Space Modeling & Lighting",
     category: "3D Lighting",
     description:
@@ -109,7 +131,7 @@ const projects: Project[] = [
     type: "3D",
   },
   {
-    id: 8,
+    id: 9,
     title: "Street Environment Modeling",
     category: "3D Modelling",
     description:
@@ -119,7 +141,7 @@ const projects: Project[] = [
     type: "3D",
   },
   {
-    id: 9,
+    id: 10,
     title: "Fantasy Axe Modeling",
     category: "3D Modelling",
     description:
@@ -129,7 +151,7 @@ const projects: Project[] = [
     type: "3D",
   },
   {
-    id: 10,
+    id: 11,
     title: "Quadruped Rig System",
     category: "Rigging",
     description:
@@ -139,7 +161,7 @@ const projects: Project[] = [
     type: "3D",
   },
   {
-    id: 11,
+    id: 12,
     title: "Full-Body Character Rig",
     category: "Rigging",
     description:
@@ -151,7 +173,7 @@ const projects: Project[] = [
 
   // UI/UX Projects (placeholders)
   {
-    id: 12,
+    id: 13,
     title: "Sustainable Design System",
     category: "UI/UX",
     description: "The Sustainable Design System is a toolkit for creating eco-friendly, energy-efficient digital interfaces using optimized colors, typography, and UI components.",
@@ -160,7 +182,7 @@ const projects: Project[] = [
     type: "UI/UX",
   },
   {
-    id: 13,
+    id: 14,
     title: "Dr. Shalini Narayanan – Personal Portfolio Website",
     category: "UI/UX",
     description: "Modern academic portfolio showcasing Dr. Shalini Narayanan’s teaching, research, publications, and media expertise with clarity.",
@@ -169,7 +191,7 @@ const projects: Project[] = [
     type: "UI/UX",
   },
   {
-    id: 14,
+    id: 15,
     title: "Prepeat – Home-Cooked Meal & Kitchen Services App",
     category: "UI/UX",
     description: "Prepeat is a seamless food-tech app for booking home-cooked meals, personal cooks, catering, and kitchen services.",
@@ -178,7 +200,7 @@ const projects: Project[] = [
     type: "UI/UX",
   },
   {
-    id: 15,
+    id: 16,
     title: "Modern Real Estate App UI",
     category: "UI/UX",
     description:
@@ -188,7 +210,7 @@ const projects: Project[] = [
     type: "UI/UX",
   },
   {
-    id: 16,
+    id: 17,
     title: "Login/SignUp Page UI Concept",
     category: "UI/UX",
     description:
@@ -201,7 +223,7 @@ const projects: Project[] = [
 
   // Research Projects (placeholders)
   {
-    id: 17,
+    id: 18,
     title: "Sustainability, Gamification and User Retention: A Study on Eco-Conscious Gamification for Better User Engagement",
     category: "Research",
     description:
@@ -211,7 +233,7 @@ const projects: Project[] = [
     type: "Research",
   },
   {
-    id: 18,
+    id: 19,
     title: "Augmented Reality and Modern Multimedia Design",
     category: "Research",
     description:
